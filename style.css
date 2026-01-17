@@ -126,18 +126,18 @@ header {
   letter-spacing: 0.01em;
 }
 
-.projects {
+.skill-roadmap {
   margin-bottom: 3rem;
 }
 
-.projects-list {
+.roadmap-list {
   margin-left: 0;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.project-item {
+.skill-tracker-item {
   background: #232834;
   border-radius: 12px;
   border: 1px solid #262c36;
@@ -147,25 +147,60 @@ header {
   position: relative;
 }
 
-.project-item:hover {
+.skill-tracker-item:hover {
   box-shadow: 0 8px 32px 0 rgba(32,48,54,0.14), 0 1.5px 5px rgba(16,20,23,0.06);
-  transform: translateY(-5px) scale(1.017);
+  transform: translateY(-2px);
   border-color: #414a5d;
 }
 
-.project-title {
+.tracker-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.tracker-header .skill-name {
   font-size: 1.08rem;
-  margin-bottom: 0.7rem;
   color: #f6f7fa;
   font-weight: 600;
   letter-spacing: 0.019em;
 }
 
-.project-desc {
-  line-height: 1.65;
-  font-size: 0.98rem;
-  color: #bfc6d1;
-  font-weight: 400;
+.tracker-header .skill-percentage {
+  font-size: 0.95rem;
+  color: #a4abb8;
+  font-weight: 500;
+  margin-left: auto;
+}
+
+.currently-focused-badge {
+  font-size: 0.75rem;
+  color: #5570f1;
+  background: rgba(85, 112, 241, 0.12);
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #1e2328;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #5570f1 0%, #6b84ff 100%);
+  border-radius: 4px;
+  transition: width 1s cubic-bezier(.12,.4,.29,1.46);
+  box-shadow: 0 0 8px rgba(85, 112, 241, 0.3);
 }
 
 .contact {

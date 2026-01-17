@@ -63,22 +63,48 @@
             </div>
         </section>
 
-        <section class="projects">
-            <h2 class="section-title"># Projects</h2>
-            <div class="projects-list">
-                <div class="project-item">
-                    <h3 class="project-title">&gt; project-name.git</h3>
-                    <p class="project-desc">
-                        &nbsp;&nbsp;&nbsp;A web application demonstrating modern front-end practices. 
-                        Built with clean architecture and responsive design principles.
-                    </p>
+        <section class="skill-roadmap">
+            <h2 class="section-title"># Skill Roadmap & Growth Tracker</h2>
+            <div class="roadmap-list">
+                <div class="skill-tracker-item">
+                    <div class="tracker-header">
+                        <span class="skill-name">HTML/CSS</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-target="80" style="width: 0%"></div>
+                    </div>
                 </div>
-                <div class="project-item">
-                    <h3 class="project-title">&gt; another-project.git</h3>
-                    <p class="project-desc">
-                        &nbsp;&nbsp;&nbsp;An interactive tool showcasing efficient algorithms and 
-                        user-friendly interfaces. Focus on performance and accessibility.
-                    </p>
+                
+                <div class="skill-tracker-item">
+                    <div class="tracker-header">
+                        <span class="skill-name">Git & GitHub</span>
+                        <span class="skill-percentage">60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-target="60" style="width: 0%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-tracker-item">
+                    <div class="tracker-header">
+                        <span class="skill-name">Cursor AI</span>
+                        <span class="skill-percentage">50%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-target="50" style="width: 0%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-tracker-item">
+                    <div class="tracker-header">
+                        <span class="skill-name">Python</span>
+                        <span class="currently-focused-badge">Currently Focused</span>
+                        <span class="skill-percentage">Learning</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-target="25" style="width: 0%"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -142,6 +168,38 @@
         
         // Initialize typewriter effect when page loads
         window.addEventListener('DOMContentLoaded', typeWriterEffect);
+
+        // Animate progress bars from 0 to target percentage
+        function animateProgressBars() {
+            const progressBars = document.querySelectorAll('.progress-fill');
+            
+            progressBars.forEach(bar => {
+                const targetPercentage = bar.getAttribute('data-target');
+                let currentPercentage = 0;
+                const increment = 1;
+                const duration = 1500; // Total animation duration in ms
+                const steps = duration / 16; // ~60fps
+                const stepIncrement = targetPercentage / steps;
+                
+                const animate = () => {
+                    currentPercentage += stepIncrement;
+                    if (currentPercentage < targetPercentage) {
+                        bar.style.width = currentPercentage + '%';
+                        requestAnimationFrame(animate);
+                    } else {
+                        bar.style.width = targetPercentage + '%';
+                    }
+                };
+                
+                // Start animation after a short delay
+                setTimeout(() => {
+                    requestAnimationFrame(animate);
+                }, 400);
+            });
+        }
+        
+        // Initialize progress bar animation when page loads
+        window.addEventListener('DOMContentLoaded', animateProgressBars);
 
         // Contact form submission handler
         document.getElementById('contactForm').addEventListener('submit', function(e) {

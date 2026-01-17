@@ -45,6 +45,22 @@ header {
   text-transform: uppercase;
 }
 
+.typewriter-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink-cursor 1s infinite;
+  color: #a4abb8;
+}
+
+@keyframes blink-cursor {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
 .about-me {
   margin-bottom: 3rem;
 }

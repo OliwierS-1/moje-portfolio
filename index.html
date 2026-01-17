@@ -85,6 +85,31 @@
             </div>
         </section>
 
+        <section class="contact">
+            <h2 class="section-title"># Contact</h2>
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/xykkkvob" method="POST">
+                <div class="form-group">
+                    <label for="name" class="form-label">$ Name:</label>
+                    <input type="text" id="name" name="name" class="form-input" required placeholder="Enter your name...">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">$ Email:</label>
+                    <input type="email" id="email" name="email" class="form-input" required placeholder="your.email@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" class="form-label">$ Message:</label>
+                    <textarea id="message" name="message" class="form-textarea" required rows="6" placeholder="Type your message here..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">
+                    <span class="command-prompt">$</span>
+                    <span class="command-text">send-message</span>
+                </button>
+            </form>
+        </section>
+
         <footer class="terminal-cursor">
             <span class="cursor-blink">_</span>
         </footer>

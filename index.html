@@ -1,5 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <h1>Strona</h1>
-    <p>nauka gita</p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Terminal Style</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="terminal-prompt">$ cat portfolio.txt</h1>
+        </header>
+
+        <section class="about-me">
+            <h2 class="section-title"># About Me</h2>
+            <p class="terminal-text">
+                &gt; Passionate developer crafting digital experiences with clean code and modern technologies. 
+                Always learning, always building. Currently exploring the intersection of design and functionality 
+                in web development.
+            </p>
+        </section>
+
+        <section class="skills">
+            <h2 class="section-title"># Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 18L12 6M12 6L18 12M12 6L6 12" stroke="#39ff14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 4L20 4M20 4L20 20M20 20L4 20M4 20L4 4" stroke="#39ff14" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <span class="skill-name">HTML5</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#39ff14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="#39ff14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="#39ff14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <span class="skill-name">CSS3</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 20C9 20 4 18 4 13V8C4 3 9 4 9 4M9 20C9 20 15 18 15 13V8C15 3 10 4 10 4M9 20L9 4M15 4L15 20" stroke="#39ff14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <span class="skill-name">Git</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#39ff14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="#39ff14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="#39ff14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="12" r="2" fill="#39ff14"/>
+                        </svg>
+                    </div>
+                    <span class="skill-name">Cursor AI</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2 class="section-title"># Projects</h2>
+            <div class="projects-list">
+                <div class="project-item">
+                    <h3 class="project-title">&gt; project-name.git</h3>
+                    <p class="project-desc">
+                        &nbsp;&nbsp;&nbsp;A web application demonstrating modern front-end practices. 
+                        Built with clean architecture and responsive design principles.
+                    </p>
+                </div>
+                <div class="project-item">
+                    <h3 class="project-title">&gt; another-project.git</h3>
+                    <p class="project-desc">
+                        &nbsp;&nbsp;&nbsp;An interactive tool showcasing efficient algorithms and 
+                        user-friendly interfaces. Focus on performance and accessibility.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="terminal-cursor">
+            <span class="cursor-blink">_</span>
+        </footer>
+    </div>
+</body>
+</html>

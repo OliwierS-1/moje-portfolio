@@ -13,11 +13,9 @@
         </header>
 
         <section class="about-me">
-            <h2 class="section-title" id="aboutMeHeading"><span id="typewriter-text"></span><span class="typewriter-cursor">|</span></h2>
+            <h2 class="section-title"># About Me</h2>
             <p class="terminal-text">
-                &gt; Passionate developer crafting digital experiences with clean code and modern technologies. 
-                Always learning, always building. Currently exploring the intersection of design and functionality 
-                in web development.
+                <span id="typewriter-text"></span><span class="typewriter-cursor">|</span>
             </p>
         </section>
 
@@ -121,9 +119,9 @@
     </div>
 
     <script>
-        // Typewriter effect for About Me heading
+        // Typewriter effect for About Me section text
         function typeWriterEffect() {
-            const text = '# About Me';
+            const text = '> Passionate developer crafting digital experiences with clean code and modern technologies. Always learning, always building. Currently exploring the intersection of design and functionality in web development.';
             const element = document.getElementById('typewriter-text');
             let i = 0;
             
@@ -131,7 +129,7 @@
                 if (i < text.length) {
                     element.textContent += text.charAt(i);
                     i++;
-                    setTimeout(type, 100); // Adjust speed here (lower = faster)
+                    setTimeout(type, 30); // Adjust speed here (lower = faster)
                 } else {
                     // Keep cursor visible after typing completes
                     document.querySelector('.typewriter-cursor').style.opacity = '1';

@@ -1,0 +1,6 @@
+ni [nazwa] - nowy plik
+git add . - dodaj do poczekalni
+git commit -m "opis" - zapisz zmiany (save)
+git log --oneline - historia zapisów
+git diff - podgląd zmian przed zapisem
+git push -u origin main - wyślij kod na GitHub

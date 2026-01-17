@@ -1,1 +1,15 @@
-body { background: #1a1a1a; color: #00ff00; font-family: monospace; display: flex; justify-content: center; align-items: center; height: 100vh; }
+body {
+  background: #101417;
+  color: #39ff14;
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-shadow:
+    0 0 8px #39ff14,
+    0 0 20px #39ff1488,
+    0 0 2px #2efc60aa;
+  letter-spacing: 0.01em;
+  font-size: 1.18rem;
+}
